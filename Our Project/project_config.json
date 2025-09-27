@@ -1,0 +1,41 @@
+{
+  "project_name": "Dementia Helper - Face Recognition",
+  "version": "1.0.0",
+  "description": "AI-powered face recognition system to help dementia patients remember people's names",
+  "use_case": "Assist dementia patients by showing name bubbles over recognized faces",
+  "workflow": {
+    "training_phase": "Send 5 images per person to Gemini with names attached",
+    "recognition_phase": "Show bubbles on detected faces in real-time",
+    "interaction_phase": "Tap bubbles to display person names in popups"
+  },
+  "target_people": [
+    "Person 1",
+    "Person 2", 
+    "Person 3"
+  ],
+  "photos_per_person": 5,
+  "gemini_model": "gemini-2.5-pro",
+  "confidence_threshold": 0.7,
+  "features": [
+    "Real-time face recognition",
+    "3D bubble positioning over faces",
+    "Tap-to-reveal name popups",
+    "Confidence scoring",
+    "Auto-cleanup of UI elements",
+    "Training mode for new people"
+  ],
+  "ui_components": [
+    "Face bubbles for recognition indicators",
+    "Name popups for displaying identities",
+    "Status text for training progress",
+    "Interactive tap handlers"
+  ],
+  "dependencies": [
+    "Remote Service Gateway",
+    "Gemini API",
+    "Depth Module API",
+    "Camera Module",
+    "Touch Input System"
+  ],
+  "accessibility": "Designed for dementia patients with simple, clear interface"
+}
